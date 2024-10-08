@@ -22,7 +22,7 @@ jobs:
     - name: Compile CSS from SCSS files
       uses: gha-utilities/sass-build@v0.4.7
       with:
-        source: **/*.sass
+        source: ./public/assets/styles/*.sass
         destination: ./public/css
 
     - name: Build

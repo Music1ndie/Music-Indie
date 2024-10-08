@@ -22,7 +22,7 @@ jobs:
         bun install
 
     - name: Compile CSS from SCSS files
-      uses: gha-utilities/sass-build@latest
+      uses: gha-utilities/sass-build@v0.6.0
       with:
         source: ./public/assets/styles/*.sass
         destination: ./public/css

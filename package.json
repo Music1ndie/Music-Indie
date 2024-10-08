@@ -1,5 +1,10 @@
 {
     "scripts": {
         "build": "bun build public/assets/scripts/main.js -o public/assets/scripts/bundle.js"
+    },
+
+    "dependencies": {
+        "jquery":"^3.7.1",
+        "sass":"^1.79.4"
     }
 }

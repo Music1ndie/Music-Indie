@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "bun build public/assets/scripts/main.js -o public/assets/scripts/bundle.js"
+    }
+}

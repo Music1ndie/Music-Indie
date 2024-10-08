@@ -17,13 +17,13 @@ jobs:
       run: curl -fsSL https://bun.sh/install | bash
 
     - name: Install Dependencies
-      run: export BUN_INSTALL="$HOME/.bun" && export PATH=$BUN_INSTALL/bin:$PATH && bun install
+      run: bun install
 
     - name: Compile CSS from SCSS files
       uses: gha-utilities/sass-build@v0.4.7
       with:
-        source: ./public/assets/styles/*.{sass, scss}
-        destination: ./public/assets/styles
+        source: **/*.sass
+        destination: ./public/css
 
     - name: Build
       run: bun run build
